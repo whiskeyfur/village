@@ -6,4 +6,5 @@ class Character
     public Character $owner;
     public Character $manager;
 
+
 }
