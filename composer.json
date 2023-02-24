@@ -1,0 +1,17 @@
+{
+  "name": "whiskeyfur/village",
+  "description": "Test code",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "John Walker",
+      "email": "John.walker.ii@gmail.com"
+    }
+  ],
+  "require": {
+    "erusev/parsedown" : "*",
+    "mustache/mustache" : "*",
+    "ext-json" : "*"
+  }
+}
