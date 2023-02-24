@@ -13,5 +13,7 @@
     "erusev/parsedown" : "*",
     "mustache/mustache" : "*",
     "ext-json" : "*"
+  },
+  "config": {
   }
 }
