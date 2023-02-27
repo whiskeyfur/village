@@ -12,7 +12,14 @@
   "require": {
     "erusev/parsedown" : "*",
     "mustache/mustache" : "*",
-    "ext-json" : "*"
+    "leafs/mvc": "*",
+    "leafs/cookie" : "*",
+    "leafs/bareui": "*",
+    "leafs/fetch": "*",
+    "leafs/veins": "*",
+    "ext-json" : "*",
+    "ext-curl" : "*",
+    "ext-pdo": "*"
   },
   "config": {
   }
