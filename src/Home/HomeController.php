@@ -5,6 +5,6 @@ class HomeController
 {
     public function index()
     {
-        echo app()->blade->render('index', ['name' => 'Michael Darko']);
+        echo app()->blade->render('index', []);
     }
 }
