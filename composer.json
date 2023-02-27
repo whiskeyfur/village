@@ -22,5 +22,6 @@
     "ext-pdo": "*"
   },
   "config": {
+    "disable-tls": true
   }
 }
