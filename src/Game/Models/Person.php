@@ -1,10 +1,13 @@
 <?php
 namespace Game\Models;
 
-class Person
+class Person extends BaseModel
 {
     public string $name;
-    public Person $sire;
-    public Person $dame;
-
+    public int $sire_id;
+    public int $dame_id;
+    public int $race_id;
+    public function __construct() {
+        parent::__construct();
+    }
 }

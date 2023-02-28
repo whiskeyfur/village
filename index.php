@@ -30,4 +30,8 @@ if (in_array($_SERVER["REMOTE_ADDR"], ["::1", "127.0.0.1"])) {
 }
 
 app()->get('/', 'Home\Controllers\HomeController@index');
+app()->get('/test', function() {
+    print_r(new \Game\Models\Person());
+});
 app()->run();
+
