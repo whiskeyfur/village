@@ -1,1 +1,0 @@
-Temporary index page to test th github pages functionality
