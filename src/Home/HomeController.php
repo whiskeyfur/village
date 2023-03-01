@@ -1,9 +1,8 @@
 <?php
 
 namespace Home;
-use Leaf\ApiController;
 
-class HomeController implements \BaseController
+class HomeController
 {
     public function index()
     {

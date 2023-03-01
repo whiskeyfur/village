@@ -1,7 +1,8 @@
-/vendor/
-/data/
 /.idea
 /composer.lock
 /composer.phar
 /composer_2.phar
+/data/
+/logs/
+/vendor/
 /views/cache/
