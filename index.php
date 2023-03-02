@@ -4,6 +4,10 @@ require "src/autoload.php";
 
 use Leaf\Database;
 
+const DATA_DIR = __DIR__ . "/data";
+
+//$auth = new Leaf\Auth;
+//$auth->autoConnect();
 Leaf\View::attach(\Leaf\Blade::class);
 app()->blade->configure("views/", "views/cache");
 

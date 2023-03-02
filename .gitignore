@@ -1,9 +1,10 @@
-/.idea
-/composer.lock
-/composer.phar
-/composer_2.phar
+/.backup/
+/.idea/
 /data/
+/resources/
 /logs/
 /vendor/
 /views/cache/
-/logs/
+/composer.lock
+/composer.phar
+/composer_2.phar
