@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        label.hiddenButton input[type=radio]:checked + span {
+            font-weight: bold;
+        }
+        label.hiddenButton input[type=checkbox], label.hiddenButton input[type=radio]  {
+            display: none
+        }
+        .blockLabel {
+            border-bottom: thin black solid
+        }
+        .blockLabel2 {
+            border-bottom: thin black dashed;
+            margin-left: 1em;
+        }
+        .blockLabel2 + div {
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="box">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    Name
+                </div>
+                <div class="column">
+                    Abigail
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    Gender
+                </div>
+                <div class="column">
+                    <label class="hiddenButton"><input type="radio" name="gender"> <span class="button">Male</span></label>
+                    <label class="hiddenButton"><input type="radio" name="gender"> <span class="button">Androgynous</span></label>
+                    <label class="hiddenButton"><input type="radio" name="gender"> <span class="button">Female</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    Race
+                </div>
+                <div class="column">
+                    <div class="blockLabel block">Baseline</div>
+                    <div class="block">
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Human</span></label>
+                    </div>
+
+                    <div class="blockLabel block">Fantasy</div>
+                    <div class="block">
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Elf</span></label>
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Dwarf</span></label>
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Gnome</span></label>
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Halfling</span></label>
+                    </div>
+
+                    <div class="blockLabel block">Mythological</div>
+                    <div class="block">
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Kitsune</span></label>
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Gryphon</span></label>
+                        <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Werewolf</span></label>
+                    </div>
+
+                    <div class="blockLabel block">Furry</div>
+                    <div class="block">
+                        <div class="blockLabel2 block">Canine</div>
+                        <div class="block">
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Dog</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Fox</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Wolf</span></label>
+                        </div>
+                        <div class="blockLabel2 block">Feline</div>
+                        <div class="block">
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Cat</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Lynx</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Bobcat</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Tiger</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Lion</span></label>
+                        </div>
+                        <div class="blockLabel2 block">Prycon</div>
+                        <div class="block">
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Raccoon</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Ringtailed Cat</span></label>
+                        </div>
+                        <div class="blockLabel2 block">Memphits and Mustids</div>
+                        <div class="block">
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Skunk</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Weasel</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Ferret</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Otter</span></label>
+                        </div>
+                        <div class="blockLabel2 block">Rodents and Rabbits</div>
+                        <div class="block">
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Mouse</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Rat</span></label>
+                            <label class="hiddenButton"><input type="radio" name="race"> <span class="button is-small">Rabbit</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
