@@ -4,6 +4,7 @@ Array.prototype.rand = function () {
 
 class Person {
     owner = null;
+    race = null;
 
     anus = {
         depth: 0,
@@ -25,10 +26,11 @@ class Person {
         size: 0
     };
 
-    constructor(gender = null, age = null, name = null) {
-        this.id   = Date.now() + Math.random();
-        this.gender = gender ?? ["m", "f", "h"].rand();
-        this.age    = age    ?? 0;
+    constructor(gender = null, age = null, name = null, race = null) {
+        this.id      = Date.now() + Math.random();
+        this.gender  = gender ?? ["m", "f", "h"].rand();
+        this.race    = race   ?? Object.keys(races).rand();
+        this.age     = age    ?? 0;
         switch(this.gender) {
             case "m":
                 this.breasts = null;
@@ -71,19 +73,13 @@ class Person {
 
 }
 
-let sire = new Person();
-sire.gender = "m";
-sire.age = 12;
+class Game {
+    static people = [];
+    static create(count = 1) {
+        for (let c = 0; c <= count; c++)
+            Game.people.push(new Person());
+    }
+    static breed(sire, dame) {
 
-let dame = new Person();
-dame.gender = "f";
-dame.age = 12;
-
-if (sire.breed(dame)) {
-    child = new Person();
-    child.sire = sire;
-    child.dame = dame;
-    dame.pregnant = true;
-} else {
-    child = null;
+    }
 }
