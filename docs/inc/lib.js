@@ -58,7 +58,7 @@ class Person {
             && ["h", "m"].includes(this.gender)
         ) {
             if ((Math.random() * 100) < (this.fertility() + tgt.fertility())) {
-                console.log("Someone got knocked up!");
+                console.log(tgt.name + " got knocked up by " + this.name);
                 return Math.random() * 3;
             }
             return false;
